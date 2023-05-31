@@ -115,13 +115,13 @@ check if the container is running :
 docker ps -a
 ```
 
-![Running Container](https://github.com/RhonnieAl/nodeJS-task-manager-project/blob/master/screenshots/Screenshot1.png)
+![Running Container](https://github.com/RhonnieAl/Dockerise-Node-App/blob/master/screenshots/Screenshot1.png)
 
 ### Done
 
 Now when you open your browser and navigate to `http://localhost:3100/` you will
 be able to interact with the Node App.
 
-![The Node App](https://github.com/RhonnieAl/nodeJS-task-manager-project/blob/master/screenshots/Screenshot2.png)
+![The Node App](https://github.com/RhonnieAl/Dockerise-Node-App/blob/master/screenshots/Screenshot2.png)
 
 Made by Rhonnie with :heart_on_fire: as a learning project.
