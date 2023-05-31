@@ -98,6 +98,10 @@ and it is built from the context `/Dockerise-Node-App`.
 Create and run a container based on the image just built. Specify MongoDB
 conection string as an Environmnet Variable during run.
 
+If your app has many environment variables, best practice is to create a
+`Environment Variable File` and refer to it with the flag `--env-file`. Docker
+will pull all env vars from it during run.
+
 ```docker
 docker run -p 3100:3100 -e "MONGO_URI=<your-mongo-uri>" -d task-manager-image
 ```
@@ -117,11 +121,21 @@ docker ps -a
 
 ![Running Container](https://github.com/RhonnieAl/Dockerise-Node-App/blob/master/screenshots/Screenshot1.png)
 
-### Done
+### Done :raised_hands:
 
 Now when you open your browser and navigate to `http://localhost:3100/` you will
 be able to interact with the Node App.
 
 ![The Node App](https://github.com/RhonnieAl/Dockerise-Node-App/blob/master/screenshots/Screenshot2.png)
 
-Made by Rhonnie with :heart_on_fire: as a learning project.
+Once done, terminate the comtainer with the following command.
+
+```docker
+docker kill <container-ID>
+```
+
+---
+
+Made by Rhonnie with :heart_on_fire:
+
+Personal Learning project.
